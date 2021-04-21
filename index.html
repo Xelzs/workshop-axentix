@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Axentix Layout</title>
+    <title>Axentix Layout - Under navbar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.1.0/dist/css/axentix.min.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
 
-  <body class="layout">
+  <body class="layout with-sidenav fixed-sidenav under-navbar">
     <header>
-      <nav class="navbar shadow-1 primary">
-        <a href="#" target="_blank" class="navbar-brand">Axentix</a>
-        <div class="navbar-menu ml-auto">
-          <a class="navbar-link" href="#">Link 1</a>
-          <a class="navbar-link" href="#">Link 2</a>
-          <a class="navbar-link" href="#">Link 3</a>
-          <a class="navbar-link" href="#">Link 4</a>
-        </div>
-      </nav>
+      <div class="navbar-fixed">
+        <nav class="navbar shadow-1 bg-headers">
+          <button class="btn small p-4 circle font-s4 bg-headers">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-brand d-flex">
+            <img class="py-2 mr-1 my-auto navbar-logo" src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-5-2.png" alt="yt">
+            <div class="h100 font-s3 font-w600">YouTube</div>
+          </div>
+          <div class="navbar-menu ml-auto font-w100">
+            <a class="navbar-link font-s3 mx-2" href="#"><i class="fas fa-video"></i></a>
+            <a class="navbar-link font-s3 mx-2" href="#"><i class="fas fa-th"></i></a>
+            <a class="navbar-link font-s3 mx-2" href="#"><i class="fas fa-bell"></i></a>
+            <img class="rounded-full navbar-logo my-auto py-1" src="https://yt3.ggpht.com/ytc/AAUvwnga3eXKkQgGU-3j1_jccZ0K9m6MbjepV0ksd7eBEw=s88-c-k-c0x00ffffff-no-rj" >
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <!-- Code here the main content -->
-    </main>
+    <div id="sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed bg-headers pr-3">
+      <a href="#" class="sidenav-link"><i class="fas fa-home txt-grey"></i> Accueil</a>
+      <a href="#" class="sidenav-link"><i class="fas fa-compass txt-grey"></i> Explorer</a>
+      <a href="#" class="sidenav-link"><i class="fas fa-users txt-grey"></i> Abonnements</a>
+      <div class="divider bd-grey bd-dark-3"></div>
+      <a href="#" class="sidenav-link"><i class="fas fa-book txt-grey"></i> Bibliothèque</a>
+      <a href="#" class="sidenav-link"><i class="fas fa-history txt-grey"></i> Historique</a>
+      <a href="#" class="sidenav-link"><i class="fas fa-clock txt-grey"></i> A regarder plus tard</a>
+      
 
-    <footer class="footer primary">
-      Copyright © 2020 - Example
-    </footer>
+    </div>
+
+    <main class="bg-content">
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axentix@1.1.0/dist/js/axentix.min.js"></script>
   </body>
 </html>
