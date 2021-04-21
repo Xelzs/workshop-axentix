@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .bg-headers {
   background-color: #202020;
   color: white;
@@ -6,4 +10,21 @@
 .bg-content {
   background-color: #181818;
   color: white;
+}
+
+.bg-color {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.tab .tab-menu {
+  --tab-bar-border: 0.2rem solid #cecece;
+}
+
+.tab .tab-menu .tab-link {
+  color: #b9b9b9;
+}
+
+.tab .tab-menu .tab-link.active {
+  color: #cecece;
 }
