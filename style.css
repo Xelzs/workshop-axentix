@@ -17,6 +17,15 @@ body {
   color: white;
 }
 
+.bg-input {
+  background-color: #313131;
+  color: #686868;
+}
+
+.bd-input {
+  border-color: #313131;
+}
+
 .tab .tab-menu {
   --tab-bar-border: 0.2rem solid #cecece;
 }
@@ -25,6 +34,39 @@ body {
   color: #b9b9b9;
 }
 
-.tab .tab-menu .tab-link.active {
-  color: #cecece;
+.tab .tab-menu .tab-link.active,
+.tab .tab-menu .tab-link:hover {
+  color: #ffffff;
+}
+
+.sidenav .sidenav-link:hover,
+.sidenav .sidenav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .navbar-menu .navbar-link:hover,
+.navbar .navbar-menu .navbar-link.active {
+  background-color: inherit;
+}
+
+.dropdown .dropdown-content .dropdown-item:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5a5a5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c;
 }

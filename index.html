@@ -18,43 +18,69 @@
     <header>
       <div class="navbar-fixed">
         <nav class="navbar shadow-1 bg-headers">
-          <button class="btn small p-4 circle font-s4 bg-headers">
+          <button class="btn small p-4 circle font-s4 bg-headers hide-md-up sidenav-trigger" data-target="sidenav">
             <i class="mdi mdi-menu"></i>
           </button>
           <div class="navbar-brand d-flex">
             <img
-              class="py-2 mr-1 my-auto navbar-logo"
-              src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-5-2.png"
-              alt="yt"
+              class="py-2 mr-1 my-auto ml-2"
+              height="30"
+              src="https://files.axelsimonet.fr/api/public/dl/wIgeHc24/axentix/workshop/logo.png"
+              alt="yt logo"
             />
-            <div class="h100 font-s3 font-w400">YouTube</div>
+            <div class="font-s3 font-w400">YouTube</div>
           </div>
+
+          <form class="centered my-auto hide-sm-down">
+            <div class="form-field my-0">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control bd-input bg-color" placeholder="Rechercher..." />
+                <button class="btn form-group-txt bg-input bd-input bd-1 bd-solid">
+                  <i class="mdi mdi-magnify"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
           <div class="navbar-menu ml-auto font-w100">
-            <a class="navbar-link font-s3 mx-2" href="#"><i class="mdi mdi-video"></i></a>
-            <a class="navbar-link font-s3 mx-2" href="#"><i class="mdi mdi-dots-grid"></i></a>
-            <a class="navbar-link font-s3 mx-2" href="#"><i class="mdi mdi-bell"></i></a>
+            <a class="navbar-link font-s3" href="#"><i class="mdi mdi-video-plus"></i></a>
+            <div class="dropdown ml-2" id="dropdown" data-ax="dropdown">
+              <a class="navbar-link font-s3 dropdown-trigger" href="#"><i class="mdi mdi-dots-grid"></i></a>
+              <div class="dropdown-content bg-content right-aligned shadow-1">
+                <a class="dropdown-item" href="#" id="dark-mode">Toggle dark mode</a>
+                <a class="dropdown-item" href="#">Other link</a>
+              </div>
+            </div>
+            <a class="navbar-link font-s3 ml-2" href="#"><i class="mdi mdi-bell"></i></a>
             <img
-              class="rounded-full navbar-logo my-auto py-1"
-              src="https://yt3.ggpht.com/ytc/AAUvwnga3eXKkQgGU-3j1_jccZ0K9m6MbjepV0ksd7eBEw=s88-c-k-c0x00ffffff-no-rj"
+              class="rounded-full ml-2 my-auto"
+              height="40"
+              src="https://files.axelsimonet.fr/api/public/dl/ZTlMDlCe/axentix/workshop/profile.jpg"
             />
           </div>
         </nav>
       </div>
     </header>
 
-    <div id="sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed bg-headers">
-      <a href="#" class="sidenav-link"><i class="mdi mdi-home txt-grey"></i> Accueil</a>
-      <a href="#" class="sidenav-link"><i class="mdi mdi-compass txt-grey"></i> Explorer</a>
-      <a href="#" class="sidenav-link"><i class="mdi mdi-youtube-subscription txt-grey"></i> Abonnements</a>
-      <div class="divider bd-grey bd-dark-3"></div>
-      <a href="#" class="sidenav-link"><i class="mdi mdi-bookmark-multiple txt-grey"></i> Bibliothèque</a>
-      <a href="#" class="sidenav-link"><i class="mdi mdi-history txt-grey"></i> Historique</a>
-      <a href="#" class="sidenav-link"><i class="mdi mdi-clock txt-grey"></i> A regarder plus tard</a>
+    <div id="sidenav" data-ax="sidenav" class="sidenav large fixed bg-headers pr-3">
+      <a href="#" class="sidenav-link"><i class="mdi mdi-home txt-grey txt-dark-1 mr-3 font-s3"></i> Accueil</a>
+      <a href="#" class="sidenav-link"><i class="mdi mdi-compass txt-grey txt-dark-1 mr-3 font-s3"></i> Explorer</a>
+      <a href="#" class="sidenav-link"
+        ><i class="mdi mdi-youtube-subscription txt-grey txt-dark-1 mr-3 font-s3"></i> Abonnements</a
+      >
+      <div class="divider bd-grey bd-dark-4 my-3"></div>
+      <a href="#" class="sidenav-link"
+        ><i class="mdi mdi-bookmark-multiple txt-grey txt-dark-1 mr-3 font-s3"></i> Bibliothèque</a
+      >
+      <a href="#" class="sidenav-link"><i class="mdi mdi-history txt-grey txt-dark-1 mr-3 font-s3"></i> Historique</a>
+      <a href="#" class="sidenav-link"
+        ><i class="mdi mdi-clock txt-grey txt-dark-1 mr-3 font-s3"></i> À regarder plus tard</a
+      >
     </div>
 
     <main class="bg-color">
       <img
-        src="https://yt3.ggpht.com/wuqXYCeCdttO0TcwBJR2yy0uJP2hPwTPdrDQpjD00t0Xd_81t6dYeLdVMR24ArD4kuIpWO4hWg=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+        src="https://files.axelsimonet.fr/api/public/dl/q2hwnOOg/axentix/workshop/bg-img.jpg"
         alt="head background"
         class="responsive-media"
       />
@@ -63,36 +89,161 @@
         <div class="bg-content">
           <div class="d-flex container pt-2">
             <img
-              class="rounded-full"
-              src="https://yt3.ggpht.com/ytc/AAUvwnga3eXKkQgGU-3j1_jccZ0K9m6MbjepV0ksd7eBEw=s88-c-k-c0x00ffffff-no-rj"
+              class="rounded-full hide-sm-down"
+              src="https://files.axelsimonet.fr/api/public/dl/ZTlMDlCe/axentix/workshop/profile.jpg"
               width="80"
             />
+
+            <div class="d-flex fx-col ml-4">
+              <h5 class="font-w400 mb-1">
+                <span
+                  data-ax="tooltip"
+                  data-tooltip-content="PewDiePie"
+                  data-tooltip-classes="grey dark-3 light-shadow-2 p-2 rounded-1 font-s1"
+                  id="channel-name"
+                >
+                  PewDiePie
+                </span>
+                <i
+                  class="mdi mdi-check-circle txt-grey font-s2"
+                  id="validate-tooltip"
+                  data-ax="tooltip"
+                  data-tooltip-content="Validé"
+                  data-tooltip-classes="grey dark-3 light-shadow-2 p-2 rounded-1 font-s1"
+                ></i>
+              </h5>
+              <span class="txt-grey font-s1">109 M d'abonnés</span>
+            </div>
+
+            <button class="btn outline txt-blue txt-dark-1 small ml-auto uppercase my-auto rounded-1">
+              <span class="outline-text">Rejoindre</span>
+            </button>
+            <button class="btn red dark-1 uppercase ml-3 my-auto uppercase rounded-1 small">S'abonner</button>
           </div>
 
-          <ul class="tab-menu container uppercase font-s1 font-w500">
-            <li class="tab-link">
-              <a href="#home">Accueil</a>
-            </li>
-            <li class="tab-link">
-              <a href="#videos">Vidéos</a>
-            </li>
-            <li class="tab-link">
-              <a href="#playlists">Playlists</a>
-            </li>
-            <li class="tab-link">
-              <a href="#community">Communauté</a>
-            </li>
-            <li class="tab-link">
-              <a href="#channels">Chaînes</a>
-            </li>
-            <li class="tab-link">
-              <a href="#about">à propos</a>
-            </li>
-          </ul>
+          <div class="tab-arrow">
+            <div class="tab-prev bg-content">
+              <a><i class="mdi mdi-chevron-left"></i></a>
+            </div>
+            <ul class="tab-menu container uppercase font-s1 font-w500">
+              <li class="tab-link">
+                <a href="#home">Accueil</a>
+              </li>
+              <li class="tab-link">
+                <a href="#videos">Vidéos</a>
+              </li>
+              <li class="tab-link">
+                <a href="#playlists">Playlists</a>
+              </li>
+              <li class="tab-link">
+                <a href="#community">Communauté</a>
+              </li>
+              <li class="tab-link">
+                <a href="#channels">Chaînes</a>
+              </li>
+              <li class="tab-link">
+                <a href="#about">à propos</a>
+              </li>
+            </ul>
+            <div class="tab-next bg-content">
+              <a><i class="mdi mdi-chevron-right"></i></a>
+            </div>
+          </div>
         </div>
 
         <div class="container">
-          <div id="home" class="py-3">Content 1</div>
+          <div id="home" class="py-3">
+            <div class="d-flex">
+              <iframe
+                width="400"
+                height="300"
+                src="https://www.youtube.com/embed/429WCrxZqe0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <div class="ml-4 hide-md-down">
+                <h6 class="font-w500 font-s2">I Hit 10 Years of Youtube Uploads!</h6>
+                <span class="txt-grey font-s1">15 600 000 vues • il y a 11 mois</span>
+                <p>
+                  ty for 10 years of pewdiepie youtube uploads brvus<br />
+                  Floor Gang Merch OUT!
+                  <a href="https://represent.com/store/pewdiepie" target="_blank" class="txt-primary"
+                    >https://represent.com/store/pewdiepie</a
+                  ><br />
+                  (Thank you)<br /><br />
+
+                  Pewdiepie's Pixelings DOWNLOAD:<br />
+                  iOS:
+                  <a href="https://represent.com/store/pewdiepie" target="_blank" class="txt-primary"
+                    >https://buff.ly/2pNG0aT</a
+                  ><br />
+                  Android:
+                  <a href="https://represent.com/store/pewdiepie" target="_blank" class="txt-primary"
+                    >https://buff.ly/34C68nZ</a
+                  >
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=429WCrxZqe0"
+                  target="_blank"
+                  class="txt-white uppercase font-w500"
+                  >lire la suite</a
+                >
+              </div>
+            </div>
+
+            <div class="divider grey dark-3 my-4"></div>
+
+            <div class="grix xs1 sm2 md3 lg4 xl5 gutter-sm3">
+              <div>
+                <img
+                  src="https://files.axelsimonet.fr/api/public/dl/Q0kSFPJh/axentix/workshop/miniature.png"
+                  alt=""
+                  class="responsive-media"
+                />
+                <h6 class="font-w500 font-s2 mt-1 mb-2">Title 1</h6>
+                <span class="txt-grey font-s1">2,6 M de vues • il y a 1 jour</span>
+              </div>
+              <div class="hide-xs">
+                <img
+                  src="https://files.axelsimonet.fr/api/public/dl/Q0kSFPJh/axentix/workshop/miniature.png"
+                  alt=""
+                  class="responsive-media"
+                />
+                <h6 class="font-w500 font-s2 mt-1 mb-2">Title 1</h6>
+                <span class="txt-grey font-s1">2,6 M de vues • il y a 1 jour</span>
+              </div>
+              <div class="hide-sm-down">
+                <img
+                  src="https://files.axelsimonet.fr/api/public/dl/Q0kSFPJh/axentix/workshop/miniature.png"
+                  alt=""
+                  class="responsive-media"
+                />
+                <h6 class="font-w500 font-s2 mt-1 mb-2">Title 1</h6>
+                <span class="txt-grey font-s1">2,6 M de vues • il y a 1 jour</span>
+              </div>
+              <div class="hide-md-down">
+                <img
+                  src="https://files.axelsimonet.fr/api/public/dl/Q0kSFPJh/axentix/workshop/miniature.png"
+                  alt=""
+                  class="responsive-media"
+                />
+                <h6 class="font-w500 font-s2 mt-1 mb-2">Title 1</h6>
+                <span class="txt-grey font-s1">2,6 M de vues • il y a 1 jour</span>
+              </div>
+              <div class="hide-lg-down">
+                <img
+                  src="https://files.axelsimonet.fr/api/public/dl/Q0kSFPJh/axentix/workshop/miniature.png"
+                  alt=""
+                  class="responsive-media"
+                />
+                <h6 class="font-w500 font-s2 mt-1 mb-2">Title 1</h6>
+                <span class="txt-grey font-s1">2,6 M de vues • il y a 1 jour</span>
+              </div>
+            </div>
+          </div>
           <div id="videos" class="py-3">Content 2</div>
           <div id="playlists" class="py-3">Content</div>
           <div id="community" class="py-3">Content</div>
